@@ -1,0 +1,112 @@
+.container-trip {
+  padding: 2rem;
+  @media (max-width: 768px) {
+    padding-top: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+  }
+  .img-clock {
+    width: 1rem;
+  }
+  .duration {
+    display: flex;
+    padding: 0.375rem 0.75rem;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 2rem;
+    font-family: "Trip Sans", sans-serif;
+    color: white;
+    border: 1px solid white;
+  }
+  .best-trip {
+    color: var(--greyscaletext-80-main, #262626);
+    font-family: "Londrina Solid";
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 4.5rem;
+  }
+  .best-trip-mobie{
+    color: var(--greyscaletext-80-main, #262626);
+    font-family: "Londrina Solid";
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 2.5rem;
+    padding-left: 1rem;
+  }
+}
+.left {
+  width: auto;
+  height: max-content;
+  flex-shrink: 0;
+  padding-top: 3.5rem;
+}
+.right {
+  scrollbar-width: none;
+  display: flex;
+  width: 47.3125rem;
+  padding-bottom: 1.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.25rem;
+  img {
+    border-radius: 1rem;
+    width: 100vw;
+  }
+  .title-location {
+    color: var(--greyscaletext-0, #fff);
+    font-family: "Trip Sans", sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120%;
+  }
+  li {
+    display: flex;
+    justify-content: start;
+    gap: 0.5rem;
+    span {
+      color: var(--greyscaletext-0, #fff);
+      /* WEB/BODY1/BOLD */
+      font-family: "Trip Sans", sans-serif;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%; /* 1.5rem */
+    }
+    color: var(--greyscaletext-5, #f1f1f1);
+    /* WEB/SUB1/REGULAR */
+    font-family: "Trip Sans", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 1.2rem */
+    letter-spacing: 0.0125rem;
+    img {
+      width: auto;
+    }
+  }
+  .from-to {
+    color: rgb(255, 255, 255);
+
+    text-align: right;
+    /* WEB/SUB1/BOLD */
+    font-family: "Trip Sans", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 1.2rem */
+    letter-spacing: 0.0125rem;
+  }
+  button {
+    background-color: #da4b19;
+  }
+}
+.left,
+.right {
+  position: sticky;
+  top: 10px;
+  // @media (max-width: 768px) {
+  //   display: flex !important;
+  // }
+}

@@ -1,0 +1,29 @@
+.container-explore {
+  width: 65.8125rem;
+  padding-left: 5rem;  
+  
+  @media (max-width: 767px) {
+    height: max-content;
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p {
+    color: var(--Grey-Green-Normal, #122718);
+    font-family: "Londrina Solid";
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 3.5rem */
+    
+
+    @media (max-width: 767px) {
+      font-size: 1.5rem;
+      line-height: 120%;
+      text-align: center;
+    }
+  }
+}
