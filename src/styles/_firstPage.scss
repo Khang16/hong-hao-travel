@@ -1,0 +1,10 @@
+.first-img {
+  width: 100%;
+  height: auto;
+  max-width: 100vw;
+  -webkit-mask-image: url("../../public/images/Vector.png");
+  object-fit: cover; // Đảm bảo hình không bị biến dạng
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+}
